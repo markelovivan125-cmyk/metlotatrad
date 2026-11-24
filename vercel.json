@@ -3,11 +3,15 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/nc/(.*)", "destination": "/api/nc/$1" },
+    { "source": "/nc/:path+", "destination": "/api/nc?p=:path*" },
+    { "source": "/api/nc/:path+", "destination": "/api/nc?p=:path*" },
     { "source": "/proxy", "destination": "/api/proxy" }
   ],
   "functions": {
-    "api/**/*.mjs": {
+    "api/nc.mjs": {
+      "maxDuration": 60
+    },
+    "api/proxy.mjs": {
       "maxDuration": 60
     }
   }
