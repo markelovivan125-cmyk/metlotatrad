@@ -1,0 +1,9 @@
+# Исходники и сборка не публикуются — в репозитории только собранный артефакт
+src/
+vendor/
+node_modules/
+ref/
+samples/
+build.ps1
+package.json
+package-lock.json

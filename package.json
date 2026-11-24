@@ -1,0 +1,21 @@
+{
+  "name": "radar-rf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "ol": "^10.6.0",
+    "proj4": "^2.15.0",
+    "three": "^0.147.0"
+  },
+  "devDependencies": {
+    "javascript-obfuscator": "^5.10.0"
+  }
+}
