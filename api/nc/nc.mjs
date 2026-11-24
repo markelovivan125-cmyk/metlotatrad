@@ -10,7 +10,9 @@ export const maxDuration = 60;
 function allow(sub) {
   return sub === '/get_token'
     || sub === '/demo/viz/tiles.json'
+    || sub === '/baltrad_wsgi'        // ← добавить
     || sub.startsWith('/baltrad_wsgi/')
+    || sub === '/xsection'            // ← добавить
     || sub.startsWith('/xsection/');
 }
 
